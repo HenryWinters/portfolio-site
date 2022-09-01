@@ -16,8 +16,8 @@ const Navbar = () => {
                 <li><a href=''>Contact</a></li>  
             </ul> 
             <div className='nav-contact-icons'> 
-                <a href=''><FontAwesomeIcon className='nav-contact-icon' icon={faGithub} /></a> 
-                <a href=''><FontAwesomeIcon className='nav-contact-icon' icon={faLinkedin} /></a> 
+                <a href='https://github.com/HenryWinters'><FontAwesomeIcon className='nav-contact-icon' icon={faGithub} /></a> 
+                <a href='https://www.linkedin.com/in/henry-winters-40b71b109/'><FontAwesomeIcon className='nav-contact-icon' icon={faLinkedin} /></a> 
             </div> 
         </div> 
     )
