@@ -117,8 +117,9 @@
   background-color: var(--background-white);
   border: 1px solid var(--border-color);
   box-shadow: var(--box-shadow-color) 0px 3px 8px;
+  border-radius: 5px 5px 5px 5px;  
   text-decoration: none;
-  font-size: 1.5em; 
+  font-size: 1.25vw; 
   font-weight: bold; 
 }
 
@@ -152,13 +153,39 @@
   padding-top: 1vh; 
 }
 
+.skills-section {
+  width: 90vw; 
+}
+
 .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;  
+  display: flex;  
+  justify-content: space-evenly;
 }
 
 .skill { 
+  width: 8vw; 
   display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  margin-left: 1vw;  
+  margin-right: 1vw; 
+  background-color: var(--background-white);
+  box-shadow: var(--box-shadow-color) 0px 3px 8px;
+  border-radius: 10px 10px 10px 10px;  
+  padding-top: 2vh; 
+}
+
+.skill i {
+  font-size: 5vw;
+}
+
+#jest-icon { 
+  width: 5vw; 
+  height: relative; 
+}
+
+.skill p {
+  font-size: 1vw; 
 }
 
 
