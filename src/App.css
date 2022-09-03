@@ -15,9 +15,9 @@
   display: flex; 
   flex-direction: row; 
   align-items: center; 
-  position: sticky; 
+  position: fixed; 
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: var(--background-white);
   height: 10vh;
   font-size: calc(10px + 2vmin);
@@ -87,7 +87,7 @@
 /* home component styling */ 
 
 .body {
-  width: 100%; 
+  width: 100vw; 
   height: 75vh;
   display: flex; 
   justify-content: center;
@@ -191,6 +191,21 @@
 
 
 /* end of about component styling */ 
+
+/* project component styling */ 
+
+.project-section {
+  width: 100vw;  
+  height: 100vh;
+  padding-top: 1vh;  
+  background-color: var(--middle-blue);
+}
+
+.bart-project img { 
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* end of project component styling */ 
 
 /* contact component styling */ 
 

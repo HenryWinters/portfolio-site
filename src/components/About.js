@@ -1,7 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3Alt, faSquareJs, faReact, faNode, faSquareGit, faGithub} from '@fortawesome/free-brands-svg-icons'
-
-
 const About = () => {
     return (
         <div className='about-section'> 
