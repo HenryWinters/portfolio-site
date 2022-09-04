@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
-import Projects from './components/Projects'
+import Carousel, { CarouselItem } from './components/Projects'
 
 function App() {
   return (
@@ -14,7 +14,11 @@ function App() {
       <body> 
         <Home /> 
         <About /> 
-        <Projects /> 
+        <Carousel> 
+          <CarouselItem>Project 1</CarouselItem>
+          <CarouselItem>Project 2</CarouselItem>
+          <CarouselItem>Project 3</CarouselItem>
+        </Carousel> 
         <Contact />
       </body>
     </div>

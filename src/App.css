@@ -205,6 +205,38 @@
   border-radius: 10px 10px 10px 10px;
 }
 
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap; 
+  transition: transform 0.3s 
+}
+
+.carousel-item { 
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 200px; 
+  background-color: var(--middle-blue);
+  color: var(--background-white);
+}
+
+.indicators {
+  display: flex; 
+  justify-content: center; 
+}
+
+.indicators > button { 
+  margin: 5px; 
+}
+
+.indicators > button.active { 
+  background-color: var(--middle-blue);
+  color: var(--background-white); 
+}
+
 /* end of project component styling */ 
 
 /* contact component styling */ 
