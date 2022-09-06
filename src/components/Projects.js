@@ -39,25 +39,29 @@ const Carousel = ({children}) => {
                 })}
             </div> 
             <div className='indicators'>
-                <button 
+                <button
+                    id='left-arrow' 
                     onClick={() => {
                         updateIndex(activeIndex - 1);
                     }}
                 >
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
-                {React.Children.map(children, (child, index) => {
-                    return (
-                        <button
-                            className={`${index === activeIndex ? 'active' : ''}`}
-                            onClick={() => {
-                                updateIndex(index);
-                            }}
-                        >
-                        </button>
-                    );
-                })}
+                <div className='project-indicators'> 
+                    {React.Children.map(children, (child, index) => {
+                        return (
+                            <button
+                                className={`${index === activeIndex ? 'active' : ''}`}
+                                onClick={() => {
+                                    updateIndex(index);
+                                }}
+                            >
+                            </button>
+                        );
+                    })}
+                </div> 
                 <button 
+                    id='right-arrow'
                     onClick={() => {
                         updateIndex(activeIndex + 1);
                     }}
