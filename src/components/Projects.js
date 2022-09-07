@@ -7,7 +7,21 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 export const CarouselItem = ({ children, width} ) => {
     return (
         <div className='carousel-item' style={{ width: width }}>
-            {children}
+            <div>
+                <h1>Projects</h1> 
+                {children}
+            </div> 
+        </div> 
+    )
+}
+
+export const BartTracker = () => {
+    return (
+        <div className='bart-tracker'> 
+            <div className='bart-project'> 
+                <h1>San Francisco BART Train Tracker</h1> 
+                <img src={bartTracker} /> 
+            </div> 
         </div> 
     )
 }
@@ -31,55 +45,45 @@ const Carousel = ({children}) => {
     }); 
 
     return (
-        
-        <div {...handlers} className='carousel'>
-            <div className='inner' style={{ transform: `translateX(-${activeIndex * 100}%)`}}> 
-                {React.Children.map(children, (child, index) => {
-                    return React.cloneElement(child, { width: '100%' })
-                })}
-            </div> 
-            <div className='indicators'>
-                <button
-                    id='left-arrow' 
-                    onClick={() => {
-                        updateIndex(activeIndex - 1);
-                    }}
-                >
-                    <FontAwesomeIcon icon={faChevronLeft} />
-                </button>
-                <div className='project-indicators'> 
+
+            <div {...handlers} className='carousel'>
+                <div className='inner' style={{ transform: `translateX(-${activeIndex * 100}%)`}}> 
                     {React.Children.map(children, (child, index) => {
-                        return (
-                            <button
-                                className={`${index === activeIndex ? 'active' : ''}`}
-                                onClick={() => {
-                                    updateIndex(index);
-                                }}
-                            >
-                            </button>
-                        );
+                        return React.cloneElement(child, { width: '100%' })
                     })}
                 </div> 
-                <button 
-                    id='right-arrow'
-                    onClick={() => {
-                        updateIndex(activeIndex + 1);
-                    }}
-                >
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </button>
+                <div className='indicators'>
+                    <button
+                        id='left-arrow' 
+                        onClick={() => {
+                            updateIndex(activeIndex - 1);
+                        }}
+                    >
+                        <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+                    <div className='project-indicators'> 
+                        {React.Children.map(children, (child, index) => {
+                            return (
+                                <button
+                                    className={`${index === activeIndex ? 'active' : ''}`}
+                                    onClick={() => {
+                                        updateIndex(index);
+                                    }}
+                                >
+                                </button>
+                            );
+                        })}
+                    </div> 
+                    <button 
+                        id='right-arrow'
+                        onClick={() => {
+                            updateIndex(activeIndex + 1);
+                        }}
+                    >
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
+                </div>
             </div>
-        </div> 
-        
-
-        /*
-        <div className='project-section'>
-            <h1>Projects</h1> 
-            <div className='bart-project'> 
-                <h1>San Francisco BART Train Tracker</h1> 
-                <img src={bartTracker} /> 
-            </div> 
-        </div> */
     )
 }
 

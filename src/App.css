@@ -69,7 +69,6 @@
 
 #henry-navbar-img:hover {
   background-color: var(--lightest-blue);
-  border: 1px solid var(--darkest-blue)
 }
 
 .nav-contact-icons { 
@@ -194,15 +193,12 @@
 
 /* project component styling */ 
 
-.project-section {
-  width: 100vw;  
-  height: 100vh;
-  padding-top: 1vh;  
-  background-color: var(--middle-blue);
-}
-
 .bart-project img { 
   border-radius: 10px 10px 10px 10px;
+}
+
+.titleAndCarousel > h1 { 
+  background-color: var(--middle-blue);
 }
 
 .carousel {
@@ -211,16 +207,17 @@
 
 .inner {
   white-space: nowrap; 
-  transition: transform 0.3s 
+  transition: transform 0.3s;
 }
 
 .carousel-item { 
   display: inline-flex;
   align-items: center; 
-  justify-content: center; 
-  height: 90vh; 
+  justify-content: center;
+  height: 90vh;
   background-color: var(--middle-blue);
   color: var(--background-white);
+  vertical-align: top; 
 }
 
 .indicators {
@@ -245,8 +242,8 @@
 }
 
 .project-indicators > button {
-  width: 2vw;
-  height: 1vw; 
+  width: 40px;
+  height: 20px; 
   margin-left: 0.5vw; 
   margin-right: 0.5vw; 
   background-color: var(--background-white);
