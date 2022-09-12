@@ -5,8 +5,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
     return (
         <div className='contact-section'>
-            <a href='https://github.com/HenryWinters'><FontAwesomeIcon className='contact-icon' icon={faGithub} /></a> 
-            <a href='https://www.linkedin.com/in/henry-winters-40b71b109/'><FontAwesomeIcon className='contact-icon' icon={faLinkedin} /></a> 
+            <a href='https://github.com/HenryWinters' target='_blank'><FontAwesomeIcon className='contact-icon' icon={faGithub} /></a> 
+            <a href='https://www.linkedin.com/in/henry-winters-40b71b109/' target='_blank'><FontAwesomeIcon className='contact-icon' icon={faLinkedin} /></a> 
             <a href=''><FontAwesomeIcon className='contact-icon' icon={faEnvelope} /></a> 
         </div>
     )

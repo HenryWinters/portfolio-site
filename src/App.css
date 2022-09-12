@@ -191,15 +191,7 @@
 
 /* end of about component styling */ 
 
-/* project component styling */ 
-
-.bart-project img { 
-  border-radius: 10px 10px 10px 10px;
-}
-
-.titleAndCarousel > h1 { 
-  background-color: var(--middle-blue);
-}
+/* carousel component styling */ 
 
 .carousel {
   overflow: hidden;
@@ -214,7 +206,7 @@
   display: inline-flex;
   align-items: center; 
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   background-color: var(--middle-blue);
   color: var(--background-white);
   vertical-align: top; 
@@ -280,6 +272,73 @@
 
 #left-arrow:hover, #right-arrow:hover {
   color: var(--lightest-blue);
+}
+
+/* end of carousel component styling */ 
+
+/* project component styling */ 
+
+.project {
+  display: flex; 
+  flex-direction: column; 
+}
+
+#projectSectionTitle {
+  text-align: center; 
+}
+
+.projectDescription > p {
+  width: 800px; 
+  white-space: pre-wrap;  
+}
+
+.project img { 
+  max-width: 800px;
+  align-self: center; 
+  border-radius: 10px 10px 10px 10px;
+}
+
+.projectLanguages {
+  display: flex; 
+  list-style-type: none; 
+  padding-inline-start: 0; 
+}
+
+.projectLanguages > li { 
+  margin-right: 20px; 
+  color: var(--green);
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow-color) 0px 3px 8px;
+  border-radius: 5px 5px 5px 5px;  
+  padding: 2px;
+  padding-left: 3px; 
+  padding-right: 3px;  
+}
+
+.projectLinks { 
+  display: flex;
+  justify-content: center;  
+  margin-top: 3vh; 
+  font-size: 1.5em; 
+}
+
+.projectLinks > a { 
+  margin-right: 30px; 
+  margin-left: 30px;
+  text-decoration: none; 
+  color: var(--green);
+  background-color: var(--background-white);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow-color) 0px 3px 8px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 2px; 
+  padding-left: 4px; 
+  padding-right: 4px; 
+}
+
+.projectLinks > a:hover { 
+  background-color: var(--border-color);
 }
 
 /* end of project component styling */ 

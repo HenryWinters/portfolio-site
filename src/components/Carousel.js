@@ -1,4 +1,3 @@
-import bartTracker from '../assets/BART-Tracker.png' 
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,19 +7,8 @@ export const CarouselItem = ({ children, width} ) => {
     return (
         <div className='carousel-item' style={{ width: width }}>
             <div>
-                <h1>Projects</h1> 
+                <h1 id='projectSectionTitle'>Projects</h1> 
                 {children}
-            </div> 
-        </div> 
-    )
-}
-
-export const BartTracker = () => {
-    return (
-        <div className='bart-tracker'> 
-            <div className='bart-project'> 
-                <h1>San Francisco BART Train Tracker</h1> 
-                <img src={bartTracker} /> 
             </div> 
         </div> 
     )
