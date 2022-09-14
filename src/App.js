@@ -7,7 +7,7 @@ import Carousel, { CarouselItem } from './components/Carousel'
 import Project from './components/Project'
 
 import bartTrackerImg from './assets/BART-Tracker.png' 
-
+import blogAppImg from './assets/BlogApp.png'
 
 
 function App() {
@@ -30,7 +30,16 @@ function App() {
               websiteLink=''
             />
           </CarouselItem>
-          <CarouselItem>Project 2</CarouselItem>
+          <CarouselItem>
+            <Project
+              projectTitle='Blog App'
+              projectDescription='App for sharing blogs'
+              projectLanguages={['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Jest']}
+              projectImg={blogAppImg}
+              githubLink=''
+              websiteLink=''
+            />
+          </CarouselItem>
           <CarouselItem>Project 3</CarouselItem>
         </Carousel> 
         <Contact />

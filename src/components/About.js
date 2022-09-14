@@ -25,6 +25,10 @@ const About = () => {
                         <p>React</p> 
                     </div> 
                     <div className='skill'>
+                        <i class="devicon-redux-original colored"></i>
+                        <p>Redux</p> 
+                    </div> 
+                    <div className='skill'>
                         <i className="devicon-nodejs-plain colored"></i>
                         <p>Node.js</p>
                     </div> 
